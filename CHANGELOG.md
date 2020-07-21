@@ -3,4 +3,4 @@
 - Created first version of the design system, with `Avatar`, `Badge`, `Button`, `Icon` and `Link` components.
 
 #### Authors: 1
-- Tom Coleman ([@tmeasday](https://github.com/tmeasday))
+- Josefine Hartung ([@josieGittingTheHub](https://github.com/josiegittingthehub))
