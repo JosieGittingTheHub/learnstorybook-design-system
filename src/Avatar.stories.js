@@ -1,6 +1,5 @@
 import React from 'react';
 import { withKnobs, select, boolean } from '@storybook/addon-knobs';
-
 import { Avatar } from './Avatar';
 
 export default {
@@ -8,6 +7,7 @@ export default {
 
   parameters: {
     component: Avatar,
+    componentSubtitle: 'Displays an image that represents a user or organization',
   },
 };
 
@@ -43,6 +43,9 @@ export const sizes = () => (
     />
   </div>
 );
+sizes.story = {
+  parameters: { docs: { storyDescription: '4 sizes are supported.' } },
+};
 
 export const initials = () => (
   <div>
