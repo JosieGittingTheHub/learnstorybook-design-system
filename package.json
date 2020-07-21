@@ -1,6 +1,6 @@
 {
-  "name": "learnstorybook-design-system",
-  "version": "0.1.0",
+  "name": "josieponst-learnstorybook-design-system",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,13 +15,18 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=zpgjtzepj6",
     "build-storybook-docs": "build-storybook -s public --docs"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
@@ -48,7 +54,14 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^5.3.19",
+    "auto": "^9.47.1",
     "chromatic": "^5.0.0",
+    "cross-env": "^7.0.2",
     "prettier": "^2.0.5"
-  }
+  },
+  "description": "Tutorial",
+  "main": "index.js",
+  "repository": "https://github.com/JosieGittingTheHub/learnstorybook-design-system.git",
+  "author": "Josefine Hartung <j.hartung@pons.de>",
+  "license": "MIT"
 }
